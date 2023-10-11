@@ -1,0 +1,25 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/champ/install/champ_bringup/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/champ/install/champ_msgs/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/rom2109/build/rom2109_simple_commander",
+        "/home/zyme/ros_ws/rom2109/install/rom2109_simple_commander/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/champ/install/champ_bringup/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/champ/install/champ_msgs/local/lib/python3.10/dist-packages",
+        "/home/zyme/ros_ws/rom2109/build/rom2109_simple_commander",
+        "/home/zyme/ros_ws/rom2109/install/rom2109_simple_commander/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "files.associations": {
+        "functional": "cpp"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zyme/ros_ws/microros_ws/install/micro_ros_agent/include/**",
+        "/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/include/**",
+        "/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/include/**",
+        "/home/zyme/ros_ws/champ/install/champ_msgs/include/**",
+        "/home/zyme/ros_ws/champ/install/champ/include/**",
+        "/home/zyme/ros_ws/explore_lite/install/multirobot_map_merge/include/**",
+        "/home/zyme/ros_ws/explore_lite/install/explore_lite/include/**",
+        "/home/zyme/ros_ws/rom2109/install/teleop_twist_joy/include/**",
+        "/home/zyme/ros_ws/rom2109/install/diffdrive_stm32/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

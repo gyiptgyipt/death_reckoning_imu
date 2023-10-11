@@ -48,8 +48,8 @@ endif()
 add_executable(raw src/raw.cpp)
 ament_target_dependencies(raw rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
-# add_executable(time_bridge src/time_bridge.cpp)
-# ament_target_dependencies(time_bridge rclcpp tf2 tf2_ros sensor_msgs)
+add_executable(dis src/dis.cpp)
+ament_target_dependencies(dis rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
 
 # install(DIRECTORY
@@ -59,6 +59,7 @@ ament_target_dependencies(raw rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_g
 # )
 
 install(TARGETS
+  dis
   raw
   # not_sub
   # tur
