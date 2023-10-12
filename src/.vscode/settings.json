@@ -18,9 +18,5 @@
         "/home/zyme/ros_ws/rom2109/install/rom2109_simple_commander/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ],
-    "files.associations": {
-        "functional": "cpp",
-        "__node_handle": "cpp"
-    }
+    ]
 }

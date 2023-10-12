@@ -1,77 +1,86 @@
-#include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/imu.hpp>
-#include <geometry_msgs/msg/twist.hpp>
+#include "rclcpp/rclcpp.hpp"
+#include <chrono>
+#include <functional>
+#include <memory>
+
+#include "sensor_msgs/msg/imu.hpp"
 #include "tf2_ros/transform_broadcaster.h"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "geometry_msgs/msg/pose.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/convert.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
-using namespace std;
-
-class IMUDisplacementTransformBroadcaster : public rclcpp::Node {
+class IMU_DR : public rclcpp::Node {
 public:
-  IMUDisplacementTransformBroadcaster() : Node("imu_displacement_transform_broadcaster") {
-    // Subscribe to the IMU topic.
-    imu_sub_ = create_subscription<sensor_msgs::msg::Imu>(
-      "/imu/data",
-      10,
-      std::bind(&IMUDisplacementTransformBroadcaster::ImuCallback, this, std::placeholders::_1));
+    IMU_DR() : Node("IMU_DR_deadreckon") {
+        
+        tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
 
-    // Create a publisher for the displacement topic.
-    displacement_pub_ = create_publisher<geometry_msgs::msg::Twist>(
-      "/displacement",
-      10);
+        
+        imu_subscriber_ = this->create_subscription<sensor_msgs::msg::Imu>(
+            "/imu/data", 10, std::bind(&IMU_DR::imuCallback, this, std::placeholders::_1));
 
-    // Create a TF broadcaster.
-    tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+        // tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
+        // timer_ = this->create_wall_timer(
+        // 100ms, std::bind(&IMU_DR::imuCallback, this));
 
-    // Initialize the displacement.
-    displacement_.linear.x = 0.0f;
-    displacement_.linear.y = 0.0f;
-    displacement_.linear.z = 0.0f;
-  }
+
+
+    }
 
 private:
-  void ImuCallback(const sensor_msgs::msg::Imu::SharedPtr msg) {
-    // Get the linear acceleration from the IMU message.
-    float acceleration[3];
-    acceleration[0] = msg->linear_acceleration.x;
-    acceleration[1] = msg->linear_acceleration.y;
-    acceleration[2] = msg->linear_acceleration.z;
+    // void rec_data(const sensor_msgs::msg::Imu::SharedPtr msg) {
+    
+    // }
 
-    // Integrate the linear acceleration twice to get the displacement.
-    displacement_.linear.x += 0.5 * acceleration[0] * msg->header.stamp.sec* msg->header.stamp.sec;
-    displacement_.linear.y += 0.5 * acceleration[1] * msg->header.stamp.sec* msg->header.stamp.sec;
-    displacement_.linear.z += 0.5 * acceleration[2] * msg->header.stamp.sec* msg->header.stamp.sec;
+    void imuCallback( const std::shared_ptr<sensor_msgs::msg::Imu> msg) {
+       
+        // Extract orientation from the IMU message
+        // tf2::Quaternion tf_orientation;
+        // tf2::fromMsg(msg->orientation, tf_orientation);
 
-    // Publish the displacement to the displacement topic.
-    displacement_pub_->publish(displacement_);
+        // Create a transformation message
+        geometry_msgs::msg::TransformStamped transform_stamped;
+        
+        double pos_x = msg->linear_acceleration.x ;
+        double pos_y = msg->linear_acceleration.y ;
 
-    // Broadcast the transform from the IMU frame to the displacement frame.
-    geometry_msgs::msg::TransformStamped transform;
-    transform.header.stamp = msg->header.stamp;
-    transform.header.stamp = this->get_clock()->now();
-    transform.header.frame_id = "imu";
-    transform.child_frame_id = "displacement";
-    transform.transform.translation.x = displacement_.linear.x;
-    transform.transform.translation.y = displacement_.linear.y;
-    transform.transform.translation.z = displacement_.linear.z;
-    transform.transform.rotation.w = 1.0f;
+        auto n_pos_x =+  pos_x*0.01;
+        auto n_pos_y =+  pos_y*0.01;
+    
 
-    tf_broadcaster_->sendTransform(transform);
-  }
+        
+        transform_stamped.header.stamp = this->get_clock()->now();
+        transform_stamped.header.frame_id = "odom";  // Parent frame
+        transform_stamped.child_frame_id = "imu_link";   // Child frame
+        transform_stamped.transform.translation.x = n_pos_x;  
+        transform_stamped.transform.translation.y = n_pos_y;
+        transform_stamped.transform.translation.z = 0.0; //msg->linear_acceleration.z;
 
-  rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr displacement_pub_;
-  std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-  geometry_msgs::msg::Twist displacement_;
+        tf2::Quaternion q;
+        q.setRPY(msg->angular_velocity.x, msg->angular_velocity.y, msg->angular_velocity.z);
+        transform_stamped.transform.rotation.x = q.x();
+        transform_stamped.transform.rotation.y = q.y();
+        transform_stamped.transform.rotation.z = q.z();
+        transform_stamped.transform.rotation.w = q.w();
+        RCLCPP_INFO(this->get_logger(), "I heard: '%f'", n_pos_x);
+
+        
+        // transform_stamped.transform.rotation = tf2::toMsg(tf_orientation);
+
+        // Broadcast the transformation
+        tf_broadcaster_->sendTransform(transform_stamped);
+
+    }
+    // rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_subscriber_;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
-int main(int argc, char * argv[]) {
-  rclcpp::init(argc, argv);
-
-  auto node = std::make_shared<IMUDisplacementTransformBroadcaster>();
-
-  rclcpp::spin(node);
-
-  rclcpp::shutdown();
-
-  return 0;
+int main(int argc, char** argv) {
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<IMU_DR>());
+    rclcpp::shutdown();
+    return 0;
 }
