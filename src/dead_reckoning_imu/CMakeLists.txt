@@ -52,11 +52,6 @@ add_executable(dis src/dis.cpp)
 ament_target_dependencies(dis rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
 
-# install(DIRECTORY
-#   launch
-#   rviz
-#   DESTINATION share/${PROJECT_NAME}/
-# )
 
 install(TARGETS
   dis
@@ -66,5 +61,10 @@ install(TARGETS
   # tf_pub
   #sub
   DESTINATION lib/${PROJECT_NAME})
+
+  install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 ament_package()

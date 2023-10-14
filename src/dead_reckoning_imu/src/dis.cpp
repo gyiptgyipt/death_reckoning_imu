@@ -18,8 +18,7 @@ public:
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
 
         
-        imu_subscriber_ = this->create_subscription<sensor_msgs::msg::Imu>(
-            "/imu/data", 10, std::bind(&IMU_DR::imuCallback, this, std::placeholders::_1));
+
 
         // tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
         // timer_ = this->create_wall_timer(
@@ -74,7 +73,6 @@ private:
 
     }
     // rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_subscriber_;
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
