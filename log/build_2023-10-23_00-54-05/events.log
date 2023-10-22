@@ -1,0 +1,207 @@
+[0.000000] (-) TimerEvent: {}
+[0.000287] (death_reckoning_imu) JobQueued: {'identifier': 'death_reckoning_imu', 'dependencies': OrderedDict()}
+[0.000411] (death_reckoning_imu) JobStarted: {'identifier': 'death_reckoning_imu'}
+[0.099441] (-) TimerEvent: {}
+[0.199823] (-) TimerEvent: {}
+[0.238389] (death_reckoning_imu) JobProgress: {'identifier': 'death_reckoning_imu', 'progress': 'cmake'}
+[0.241980] (death_reckoning_imu) JobProgress: {'identifier': 'death_reckoning_imu', 'progress': 'build'}
+[0.243316] (death_reckoning_imu) Command: {'cmd': ['/home/zyme/.local/bin/cmake', '--build', '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu', '--', '-j12', '-l12'], 'cwd': '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zyme'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs/lib:/home/zyme/ros_ws/microros_ws/install/std_srvs/lib:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/lib:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zyme'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('SYSTEMD_EXEC_PID', '15486'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zyme/ros_ws/death_reckoning_imu/install:/home/zyme/ros_ws/microros_ws/install:/home/zyme/ros_ws/gyro/gyro_micro_ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zyme'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'zyme'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zyme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dev:@/tmp/.ICE-unix/2098,unix/dev:/tmp/.ICE-unix/2098'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ef884444_eda4_431c_8789_af3c5cc8bb05'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zyme/ros_ws/gyro/gyro_micro_ros/install/gyro_micro_ros:/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu:/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs:/home/zyme/ros_ws/microros_ws/install/std_srvs:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities:/home/zyme/ros_ws/microros_ws/install/micro_ros_setup:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zyme/ros_ws/gyro/gyro_micro_ros/install/gyro_micro_ros:/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu:/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs:/home/zyme/ros_ws/microros_ws/install/std_srvs:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/zyme/ros_ws/microros_ws/install/microcdr:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities:/home/zyme/ros_ws/microros_ws/install/micro_ros_setup:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.300026] (-) TimerEvent: {}
+[0.356869] (death_reckoning_imu) StdoutLine: {'line': b'[ 50%] Built target raw\n'}
+[0.357815] (death_reckoning_imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/play_time.dir/src/play_time.cpp.o\x1b[0m\n'}
+[0.370159] (death_reckoning_imu) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/dis.dir/src/dis.cpp.o\x1b[0m\n'}
+[0.400166] (-) TimerEvent: {}
+[0.500784] (-) TimerEvent: {}
+[0.601545] (-) TimerEvent: {}
+[0.702515] (-) TimerEvent: {}
+[0.803206] (-) TimerEvent: {}
+[0.904605] (-) TimerEvent: {}
+[1.005553] (-) TimerEvent: {}
+[1.106367] (-) TimerEvent: {}
+[1.207456] (-) TimerEvent: {}
+[1.307987] (-) TimerEvent: {}
+[1.408557] (-) TimerEvent: {}
+[1.509059] (-) TimerEvent: {}
+[1.610285] (-) TimerEvent: {}
+[1.710811] (-) TimerEvent: {}
+[1.811492] (-) TimerEvent: {}
+[1.912169] (-) TimerEvent: {}
+[2.012621] (-) TimerEvent: {}
+[2.113125] (-) TimerEvent: {}
+[2.213555] (-) TimerEvent: {}
+[2.313936] (-) TimerEvent: {}
+[2.414386] (-) TimerEvent: {}
+[2.514861] (-) TimerEvent: {}
+[2.615568] (-) TimerEvent: {}
+[2.716124] (-) TimerEvent: {}
+[2.816423] (-) TimerEvent: {}
+[2.916860] (-) TimerEvent: {}
+[3.017254] (-) TimerEvent: {}
+[3.118195] (-) TimerEvent: {}
+[3.219175] (-) TimerEvent: {}
+[3.320418] (-) TimerEvent: {}
+[3.420914] (-) TimerEvent: {}
+[3.521319] (-) TimerEvent: {}
+[3.621624] (-) TimerEvent: {}
+[3.721949] (-) TimerEvent: {}
+[3.822389] (-) TimerEvent: {}
+[3.922980] (-) TimerEvent: {}
+[4.023334] (-) TimerEvent: {}
+[4.123639] (-) TimerEvent: {}
+[4.192814] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/play_time.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IMU2Twist::imuCallback(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.192993] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/play_time.cpp:38:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ktime_now\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.193065] (death_reckoning_imu) StderrLine: {'line': b'   38 |         double \x1b[01;35m\x1b[Ktime_now\x1b[m\x1b[K = now.seconds();\n'}
+[4.193127] (death_reckoning_imu) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.223745] (-) TimerEvent: {}
+[4.303421] (death_reckoning_imu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.304104] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.304307] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.304428] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.304559] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.304684] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.304795] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.304916] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.305046] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.305304] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.305561] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.305785] (death_reckoning_imu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:1\x1b[m\x1b[K:\n'}
+[4.305918] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IMU_DR::PoseCallback(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.306089] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:61:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.306193] (death_reckoning_imu) StderrLine: {'line': b'   61 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"I heard: \'%d\'"\x1b[m\x1b[K, \x1b[32m\x1b[Kmsg->linear.x\x1b[m\x1b[K);\n'}
+[4.306308] (death_reckoning_imu) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.306383] (death_reckoning_imu) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[4.306445] (death_reckoning_imu) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type {aka double}\x1b[m\x1b[K\n'}
+[4.306539] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:61:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[4.306603] (death_reckoning_imu) StderrLine: {'line': b'   61 |         RCLCPP_INFO(this->get_logger(), "I heard: \'\x1b[01;36m\x1b[K%d\x1b[m\x1b[K\'", msg->linear.x);\n'}
+[4.306663] (death_reckoning_imu) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[4.306729] (death_reckoning_imu) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[4.306787] (death_reckoning_imu) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[4.306854] (death_reckoning_imu) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[K%f\x1b[m\x1b[K\n'}
+[4.323890] (-) TimerEvent: {}
+[4.424221] (-) TimerEvent: {}
+[4.524579] (-) TimerEvent: {}
+[4.624964] (-) TimerEvent: {}
+[4.725352] (-) TimerEvent: {}
+[4.825618] (-) TimerEvent: {}
+[4.926012] (-) TimerEvent: {}
+[5.026297] (-) TimerEvent: {}
+[5.126601] (-) TimerEvent: {}
+[5.226993] (-) TimerEvent: {}
+[5.327302] (-) TimerEvent: {}
+[5.427614] (-) TimerEvent: {}
+[5.527940] (-) TimerEvent: {}
+[5.628272] (-) TimerEvent: {}
+[5.728532] (-) TimerEvent: {}
+[5.828847] (-) TimerEvent: {}
+[5.929278] (-) TimerEvent: {}
+[6.029631] (-) TimerEvent: {}
+[6.130015] (-) TimerEvent: {}
+[6.230487] (-) TimerEvent: {}
+[6.330798] (-) TimerEvent: {}
+[6.431107] (-) TimerEvent: {}
+[6.531423] (-) TimerEvent: {}
+[6.631713] (-) TimerEvent: {}
+[6.732047] (-) TimerEvent: {}
+[6.832332] (-) TimerEvent: {}
+[6.932607] (-) TimerEvent: {}
+[7.032865] (-) TimerEvent: {}
+[7.133222] (-) TimerEvent: {}
+[7.234079] (-) TimerEvent: {}
+[7.335161] (-) TimerEvent: {}
+[7.435941] (-) TimerEvent: {}
+[7.455458] (death_reckoning_imu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:59:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpos_x\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized\x07-Wmaybe-uninitialized\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.455726] (death_reckoning_imu) StderrLine: {'line': b'   59 |         \x1b[01;35m\x1b[Kpos_x += dis_x\x1b[m\x1b[K;\n'}
+[7.455865] (death_reckoning_imu) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.536234] (-) TimerEvent: {}
+[7.637056] (-) TimerEvent: {}
+[7.737564] (-) TimerEvent: {}
+[7.838199] (-) TimerEvent: {}
+[7.938895] (-) TimerEvent: {}
+[8.039231] (-) TimerEvent: {}
+[8.139877] (-) TimerEvent: {}
+[8.240444] (-) TimerEvent: {}
+[8.340781] (-) TimerEvent: {}
+[8.441217] (-) TimerEvent: {}
+[8.541804] (-) TimerEvent: {}
+[8.642110] (-) TimerEvent: {}
+[8.742473] (-) TimerEvent: {}
+[8.842810] (-) TimerEvent: {}
+[8.943273] (-) TimerEvent: {}
+[9.043602] (-) TimerEvent: {}
+[9.144335] (-) TimerEvent: {}
+[9.244833] (-) TimerEvent: {}
+[9.345124] (-) TimerEvent: {}
+[9.445421] (-) TimerEvent: {}
+[9.545743] (-) TimerEvent: {}
+[9.646013] (-) TimerEvent: {}
+[9.746380] (-) TimerEvent: {}
+[9.846684] (-) TimerEvent: {}
+[9.946962] (-) TimerEvent: {}
+[10.047249] (-) TimerEvent: {}
+[10.147646] (-) TimerEvent: {}
+[10.248200] (-) TimerEvent: {}
+[10.348490] (-) TimerEvent: {}
+[10.448755] (-) TimerEvent: {}
+[10.549198] (-) TimerEvent: {}
+[10.649489] (-) TimerEvent: {}
+[10.750028] (-) TimerEvent: {}
+[10.850851] (-) TimerEvent: {}
+[10.951761] (-) TimerEvent: {}
+[11.052479] (-) TimerEvent: {}
+[11.152940] (-) TimerEvent: {}
+[11.253668] (-) TimerEvent: {}
+[11.354157] (-) TimerEvent: {}
+[11.402543] (death_reckoning_imu) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable dis\x1b[0m\n'}
+[11.414201] (death_reckoning_imu) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable play_time\x1b[0m\n'}
+[11.454416] (-) TimerEvent: {}
+[11.555106] (-) TimerEvent: {}
+[11.656188] (-) TimerEvent: {}
+[11.757827] (-) TimerEvent: {}
+[11.858884] (-) TimerEvent: {}
+[11.960387] (-) TimerEvent: {}
+[12.061666] (-) TimerEvent: {}
+[12.162606] (-) TimerEvent: {}
+[12.263482] (-) TimerEvent: {}
+[12.363874] (-) TimerEvent: {}
+[12.464283] (-) TimerEvent: {}
+[12.565087] (-) TimerEvent: {}
+[12.665557] (-) TimerEvent: {}
+[12.766420] (-) TimerEvent: {}
+[12.867605] (-) TimerEvent: {}
+[12.886203] (death_reckoning_imu) StdoutLine: {'line': b'[100%] Built target play_time\n'}
+[12.908213] (death_reckoning_imu) StdoutLine: {'line': b'[100%] Built target dis\n'}
+[12.932924] (death_reckoning_imu) CommandEnded: {'returncode': 0}
+[12.967822] (-) TimerEvent: {}
+[13.055528] (death_reckoning_imu) JobProgress: {'identifier': 'death_reckoning_imu', 'progress': 'install'}
+[13.068029] (-) TimerEvent: {}
+[13.115983] (death_reckoning_imu) Command: {'cmd': ['/home/zyme/.local/bin/cmake', '--install', '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu'], 'cwd': '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zyme'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs/lib:/home/zyme/ros_ws/microros_ws/install/std_srvs/lib:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent/lib:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/lib:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zyme'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge:appmenu-gtk-module'), ('SYSTEMD_EXEC_PID', '15486'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/zyme/ros_ws/death_reckoning_imu/install:/home/zyme/ros_ws/microros_ws/install:/home/zyme/ros_ws/gyro/gyro_micro_ros/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zyme'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'zyme'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zyme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dev:@/tmp/.ICE-unix/2098,unix/dev:/tmp/.ICE-unix/2098'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ef884444_eda4_431c_8789_af3c5cc8bb05'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zyme/ros_ws/gyro/gyro_micro_ros/install/gyro_micro_ros:/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu:/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs:/home/zyme/ros_ws/microros_ws/install/std_srvs:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities:/home/zyme/ros_ws/microros_ws/install/micro_ros_setup:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zyme/ros_ws/gyro/gyro_micro_ros/install/gyro_micro_ros:/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu:/home/zyme/ros_ws/microros_ws/install/unique_identifier_msgs:/home/zyme/ros_ws/microros_ws/install/std_srvs:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/zyme/ros_ws/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/zyme/ros_ws/microros_ws/install/microcdr:/home/zyme/ros_ws/microros_ws/install/micro_ros_utilities:/home/zyme/ros_ws/microros_ws/install/micro_ros_setup:/home/zyme/ros_ws/microros_ws/install/micro_ros_agent:/home/zyme/ros_ws/microros_ws/install/micro_ros_msgs:/home/zyme/ros_ws/microros_ws/install/builtin_interfaces:/opt/ros/humble')]), 'shell': False}
+[13.168442] (-) TimerEvent: {}
+[13.175677] (death_reckoning_imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.176350] (death_reckoning_imu) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.177038] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/play_time\n'}
+[13.177566] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/dis\n'}
+[13.177771] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/raw\n'}
+[13.178488] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/cpy.launch\n'}
+[13.178749] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/death_reckon.launch\n'}
+[13.179006] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/dr.launch.py\n'}
+[13.179212] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/package_run_dependencies/death_reckoning_imu\n'}
+[13.179502] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/parent_prefix_path/death_reckoning_imu\n'}
+[13.179788] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/ament_prefix_path.sh\n'}
+[13.180096] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/ament_prefix_path.dsv\n'}
+[13.180378] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/path.sh\n'}
+[13.180598] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/path.dsv\n'}
+[13.180845] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.bash\n'}
+[13.180970] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.sh\n'}
+[13.181149] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.zsh\n'}
+[13.181310] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.dsv\n'}
+[13.181443] (death_reckoning_imu) StdoutLine: {'line': b'-- Symlinking: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.dsv\n'}
+[13.190093] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/packages/death_reckoning_imu\n'}
+[13.190408] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/cmake/death_reckoning_imuConfig.cmake\n'}
+[13.190546] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/cmake/death_reckoning_imuConfig-version.cmake\n'}
+[13.190830] (death_reckoning_imu) StdoutLine: {'line': b'-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.xml\n'}
+[13.211516] (death_reckoning_imu) CommandEnded: {'returncode': 0}
+[13.268827] (-) TimerEvent: {}
+[13.369221] (-) TimerEvent: {}
+[13.469584] (-) TimerEvent: {}
+[13.487430] (death_reckoning_imu) JobEnded: {'identifier': 'death_reckoning_imu', 'rc': 0}
+[13.488439] (-) EventReactorShutdown: {}

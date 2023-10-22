@@ -1,0 +1,4 @@
+[01m[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:[m[K In member function ‘[01m[Kvoid IMU_DR::PoseCallback(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)[m[K’:
+[01m[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:59:15:[m[K [01;35m[Kwarning: [m[K‘[01m[Kpos_x[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   59 |         [01;35m[Kpos_x += dis_x[m[K;
+      |         [01;35m[K~~~~~~^~~~~~~~[m[K

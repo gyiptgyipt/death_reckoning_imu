@@ -1,0 +1,32 @@
+[ 33%] Built target raw
+[ 66%] Built target play_time
+[ 83%] [32mBuilding CXX object CMakeFiles/dis.dir/src/dis.cpp.o[0m
+[01m[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:[m[K In member function ‘[01m[Kvoid IMU_DR::PoseCallback(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void> > >)[m[K’:
+[01m[K/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu/src/dis.cpp:59:15:[m[K [01;35m[Kwarning: [m[K‘[01m[Kpos_x[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   59 |         [01;35m[Kpos_x += dis_x[m[K;
+      |         [01;35m[K~~~~~~^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable dis[0m
+[100%] Built target dis
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/play_time
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/dis
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/death_reckoning_imu/raw
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/cpy.launch
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/death_reckon.launch
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu//launch/dr.launch.py
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/package_run_dependencies/death_reckoning_imu
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/parent_prefix_path/death_reckoning_imu
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/path.sh
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/environment/path.dsv
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.bash
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.sh
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.zsh
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/local_setup.dsv
+-- Symlinking: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.dsv
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/ament_index/resource_index/packages/death_reckoning_imu
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/cmake/death_reckoning_imuConfig.cmake
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/cmake/death_reckoning_imuConfig-version.cmake
+-- Up-to-date symlink: /home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.xml

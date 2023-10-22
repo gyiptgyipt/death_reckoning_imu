@@ -17,7 +17,8 @@ find_package(sensor_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rviz2 REQUIRED)
-
+find_package(tf2_sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -48,18 +49,24 @@ endif()
 add_executable(raw src/raw.cpp)
 ament_target_dependencies(raw rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
-# add_executable(dis src/dis.cpp)
-# ament_target_dependencies(dis rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
+add_executable(dis src/dis.cpp)
+ament_target_dependencies(dis rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
 add_executable(play_time src/play_time.cpp)
 ament_target_dependencies(play_time rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs)
 
 
 
+# add_executable(tf_2sensor_test src/tf2_sensor_test.cpp)
+# ament_target_dependencies(tf_2sensor_test rclcpp tf2 tf2_ros sensor_msgs geometry_msgs tf2_geometry_msgs tf2_sensor_msgs nav_msgs)
+
+
+
 
 install(TARGETS
+  #tf_2sensor_test
   play_time
-  #dis
+  dis
   raw
   # not_sub
   # tur

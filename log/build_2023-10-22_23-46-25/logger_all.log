@@ -1,0 +1,147 @@
+[1.928s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.928s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fc3acd908e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc3acd91f60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc3acd91f60>>, mixin_verb=('build',))
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.015s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.015s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zyme/ros_ws/death_reckoning_imu'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extensions ['ignore', 'ignore_ament_install']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extension 'ignore'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extension 'ignore_ament_install'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extensions ['colcon_pkg']
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extension 'colcon_pkg'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extensions ['colcon_meta']
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extension 'colcon_meta'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extensions ['ros']
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/dead_reckoning_imu) by extension 'ros'
+[2.059s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dead_reckoning_imu' with type 'ros.ament_cmake' and name 'death_reckoning_imu'
+[2.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.060s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.210s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[2.210s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[2.231s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/zyme/ros_ws/death_reckoning_imu/install
+[2.253s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/zyme/ros_ws/microros_ws/install
+[2.278s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/zyme/ros_ws/gyro/gyro_micro_ros/install
+[2.300s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 431 installed packages in /opt/ros/humble
+[2.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_args' from command line to 'None'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_target' from command line to 'None'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_clean_cache' from command line to 'False'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_clean_first' from command line to 'False'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'cmake_force_configure' from command line to 'False'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'ament_cmake_args' from command line to 'None'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'catkin_cmake_args' from command line to 'None'
+[2.407s] Level 5:colcon.colcon_core.verb:set package 'death_reckoning_imu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.407s] DEBUG:colcon.colcon_core.verb:Building package 'death_reckoning_imu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu', 'merge_install': False, 'path': '/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu', 'symlink_install': True, 'test_result_base': None}
+[2.427s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.448s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.448s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu' with build type 'ament_cmake'
+[2.449s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu'
+[2.475s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake /home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu
+[6.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake /home/zyme/ros_ws/death_reckoning_imu/src/dead_reckoning_imu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu
+[6.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake --build /home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu -- -j12 -l12
+[15.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake --build /home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu -- -j12 -l12
+[15.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake --install /home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu
+[15.987s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(death_reckoning_imu)
+[15.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/zyme/.local/bin/cmake --install /home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu
+[16.014s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' for CMake module files
+[16.014s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' for CMake config files
+[16.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('death_reckoning_imu', 'cmake_prefix_path')
+[16.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.ps1'
+[16.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.dsv'
+[16.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.sh'
+[16.041s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib'
+[16.041s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/bin'
+[16.041s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/pkgconfig/death_reckoning_imu.pc'
+[16.041s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/python3.10/site-packages'
+[16.041s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/bin'
+[16.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.ps1'
+[16.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.dsv'
+[16.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.sh'
+[16.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.bash'
+[16.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.zsh'
+[16.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/colcon-core/packages/death_reckoning_imu)
+[16.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(death_reckoning_imu)
+[16.177s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' for CMake module files
+[16.178s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu' for CMake config files
+[16.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('death_reckoning_imu', 'cmake_prefix_path')
+[16.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.ps1'
+[16.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.dsv'
+[16.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/hook/cmake_prefix_path.sh'
+[16.206s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib'
+[16.206s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/bin'
+[16.206s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/pkgconfig/death_reckoning_imu.pc'
+[16.206s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/lib/python3.10/site-packages'
+[16.207s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/bin'
+[16.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.ps1'
+[16.232s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.dsv'
+[16.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.sh'
+[16.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.bash'
+[16.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/death_reckoning_imu/package.zsh'
+[16.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/death_reckoning_imu/install/death_reckoning_imu/share/colcon-core/packages/death_reckoning_imu)
+[16.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.234s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.265s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.265s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.265s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.279s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.306s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/death_reckoning_imu/install/local_setup.ps1'
+[16.308s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zyme/ros_ws/death_reckoning_imu/install/_local_setup_util_ps1.py'
+[16.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/death_reckoning_imu/install/setup.ps1'
+[16.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/death_reckoning_imu/install/local_setup.sh'
+[16.333s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zyme/ros_ws/death_reckoning_imu/install/_local_setup_util_sh.py'
+[16.333s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/death_reckoning_imu/install/setup.sh'
+[16.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/death_reckoning_imu/install/local_setup.bash'
+[16.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/death_reckoning_imu/install/setup.bash'
+[16.382s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/death_reckoning_imu/install/local_setup.zsh'
+[16.382s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/death_reckoning_imu/install/setup.zsh'
