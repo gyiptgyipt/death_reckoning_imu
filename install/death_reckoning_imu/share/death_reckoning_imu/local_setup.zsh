@@ -1,1 +1,0 @@
-/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu/play_time" "/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu/dis" "/home/zyme/ros_ws/death_reckoning_imu/build/death_reckoning_imu/raw" "TARGETS" "play_time" "dis" "raw" "DESTINATION" "lib/death_reckoning_imu")

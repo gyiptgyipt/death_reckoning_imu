@@ -1,8 +1,0 @@
-source;share/death_reckoning_imu/hook/cmake_prefix_path.ps1
-source;share/death_reckoning_imu/hook/cmake_prefix_path.dsv
-source;share/death_reckoning_imu/hook/cmake_prefix_path.sh
-source;share/death_reckoning_imu/local_setup.bash
-source;share/death_reckoning_imu/local_setup.dsv
-source;share/death_reckoning_imu/local_setup.ps1
-source;share/death_reckoning_imu/local_setup.sh
-source;share/death_reckoning_imu/local_setup.zsh
